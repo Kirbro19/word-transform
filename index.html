@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Склонение по падежам</title>
+  </head>
+  <body>
+    <form name="transform" class="form form__validate">
+      <div class="form__header title">
+        Склонение существительного по падежам
+      </div>
+
+      <div class="form__line">
+        <input
+          type="text"
+          id="input-word"
+          class="form__input"
+          name="inputWord"
+          placeholder="Введите существительное"
+        />
+        <div class="form__hint"></div>
+
+        <select id="selectCase" class="select__case">
+          <option value="genitive">Родительный</option>
+          <option value="dative">Дательный</option>
+          <option value="accusative">Винительный</option>
+          <option value="ablative">Творительный</option>
+          <option value="prepositional">Предложный</option>
+        </select>
+        <label class="label__case">падеж</label>
+      </div>
+      <div id="input-error-form" class="form__error"></div>
+      <button type="submit" id="button" class="form__button">
+        Преобразовать
+      </button>
+    </form>
+    <div class="wrapper" id="wrapper">
+      <label for="result">Результат:</label>
+      <div class="wrapper__result" id="result"></div>
+    </div>
+    <footer>© Kir bro</footer>
+    <script src="main.js"></script>
+  </body>
+</html>
